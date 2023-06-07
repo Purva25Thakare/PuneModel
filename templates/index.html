@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune House Prediction</title>
+    <head>
+        <style>
+           body {
+            background-image: url('https://qph.cf2.quoracdn.net/main-qimg-3cfe359eadcddeaf6ad67939aa27f1cc.webp');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;;
+           }
+        </style>
+</head>
+<body>
+    
+    <h1> Pune House Price Prediction </h1>
+
+    <form method="GET" action ="/predict_charges">
+
+        <label><b>Area Type:</b></label>
+        <select name="area_type">
+            <option value="Super built-up  Area">Super built-up  Area</option>
+            <option value="Plot  Area">Plot  Area</option>
+            <option value="Built-up  Area">Built-up  Area</option>
+            <option value="Carpet  Area">Carpet  Area</option>
+            
+        </select>
+        
+
+            <br>
+            <br>
+        <label><b>Availability:</b></label>
+        <select name="availability">
+            <option value="Ready To Move">Ready To Move</option>
+            <option value="Immediate Possesion">Immediate Possesion</option>
+            <option value="availabile_dates">Soon Available</option>
+        </select>
+        <br>
+        <br>
+
+
+        <label><b>Size:</b></label>
+        <select name="size">
+            <option value="1 BHK">1 BHK</option>
+            <option value="2 BHK">2 BHK</option>
+            <option value="3 BHK">3 BHK</option>
+            <option value="4 BHK">4 BHK</option>    
+            <option value="1 Bedroom">1 Bedroom</option>
+            <option value="2 Bedroom">2 Bedroom</option>
+            <option value="3 Bedroom">3 Bedroom</option>
+            <option value="4 Bedroom">4 Bedroom</option>  
+            <option value="5 Bedroom">5 Bedroom</option>
+            <option value="6 Bedroom">6 Bedroom</option>  
+        </select>
+            <br>
+            <br>
+
+        <label><b>Total Square Ft</b></label>
+        <input type = "text" name = "total_sqft">
+        </select>
+        <br>
+        <br>
+
+        <label><b>Bath</b></label>
+        <input type = "text" name = "bath">
+        </select>
+        <br>
+         <br>
+
+        <label><b>Balcony</b></label>
+        <input type = "text" name = "balcony">
+         </select>
+        <br>
+        <br>    
+
+        <label><b>Site Location:</b></label>
+        <select name="site_location">
+            <option value="Alandi Road">Alandi Road</option>
+            <option value="Ambegaon Budruk">Ambegaon Budruk</option>
+            <option value="Household">Household</option>
+            <option value="Anandnagar">Anandnagar</option>
+            <option value="Aundh">Aundh</option>
+            <option value="Aundh Road">Aundh Road</option>
+            <option value="Balaji Nagar">Balaji Nagar</option>
+            <option value="Baner">Baner</option>
+            <option value="Bhavani Peth">Bhavani Peth</option>
+            <option value="Bibvewadi">Bibvewadi</option>
+            <option value="Bopodi">Bopodi</option>
+            <option value="Budhwar Peth">Budhwar Peth</option>
+            <option value="Bund Garden Road">Bund Garden Road</option>
+            <option value="Camp">Camp</option>
+            <option value="Chandan Nagar">Chandan Nagar</option>
+            <option value="Dapodi">Dapodi</option>
+            <option value="Deccan Gymkhana">Deccan Gymkhana</option>
+            <option value="Dehu Road">Dehu Road</option>
+            <option value="Dhankawadi">Dhankawadi</option>
+            <option value="Dhayari Phata">Dhayari Phata</option>
+            <option value="Erandwane">Erandwane</option>
+            <option value="Fatima Nagar">Fatima Nagar</option>
+            <option value="Fergusson College Road">Fergusson College Road</option>
+            <option value="Ganesh Peth">Ganesh Peth</option>
+            <option value="Gokhale Nagar">Gokhale Nagar</option>
+            <option value="Guruwar peth">Guruwar peth</option>
+            <option value="Hadapsar">Hadapsar</option>
+            <option value="Jangali Maharaj Road">Jangali Maharaj Road</option>
+            <option value="Kalyani Nagar">Kalyani Nagar</option>
+            <option value="Karve Nagar">Karve Nagar</option>
+            <option value="Kasba Peth">Kasba Peth</option>
+            <option value="Katraj">Katraj</option>
+            <option value="Khadaki">Khadaki</option>
+            <option value="Kharadi">Kharadi</option>
+            <option value="Kondhwa">Kondhwa</option>
+            <option value="Koregaon Park">Koregaon Park</option>
+            <option value="Kothrud">Kothrud</option>
+            <option value="Laxmi Road">Laxmi Road</option>
+            <option value="Mangalwar peth">Mangalwar peth</option>
+            <option value="Market yard">Market yard</option>
+            <option value="Nana Peth">Nana Peth</option>
+            <option value="Narayan Peth">Narayan Peth</option>
+            <option value="Pashan">Pashan</option>
+            <option value="Pirangut">Pirangut</option>
+            <option value="Pune Railway Station">Pune Railway Station</option>
+            <option value="Raviwar Peth">Raviwar Peth</option>
+            <option value="Sadashiv Peth">Sadashiv Peth</option>
+            <option value="Senapati Bapat Road">Senapati Bapat Road</option>
+            <option value="Shaniwar Peth">Shaniwar Peth</option>
+            <option value="Shivaji Nagar">Shivaji Nagar</option>
+            <option value="Swargate">Swargate</option>
+            <option value="Viman Nagar">Viman Nagar</option>
+            <option value="Wagholi">Wagholi</option>
+            <option value="Wakadewadi">Wakadewadi</option>
+            <option value="Warje">Warje</option>
+            <option value="Yerawada">Yerawada</option>
+            
+          </select>  
+            
+    
+        <br>
+        <input type = "submit" value = "SUBMIT">
+
+        <br>
+            <p>Your House Price in Pune will be <b>{{ prediction }} lakhs/- Rs.</b> Only. </p>
+
+        </form>
+
+
+</body>
+
+
+</html>
